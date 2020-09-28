@@ -1,6 +1,15 @@
 #!/usr/bin/python
 import sys
 
+import configparser
+
+path = "../../../__data/"
+config_file = "_config.ini"
+
+config = configparser.ConfigParser()
+config.read(path + config_file)
+print( config["topsecret.server.com"]['Port'])
+
 def main():
     print("Hello, World!")
 
