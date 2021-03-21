@@ -21,7 +21,7 @@ def main():
     calculate_days("20200101")
     calculate_days("20210101")
     calculate_days("20210224")
-
+    calculate_days(date.today().strftime('%Y%m%d'))
 
 if __name__== "__main__" :
     main()
