@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import sys
 import configparser
-
+ 
 # import http.client
 import requests
 import json
