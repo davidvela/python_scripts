@@ -158,4 +158,3 @@ def main():
 if __name__== "__main__" :
     main()
     # print( 'Number of arguments:' + str(len(sys.argv)) + ' arguments.' )
-    # print ( 'Argument List:' + str(sys.argv) )
