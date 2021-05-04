@@ -12,6 +12,9 @@ config.read(path + config_file)
 fname = 'entries_zalando'
 folder = 'JSON/'
 
+# read csv: 
+# ds = pd.read_csv(path + 'xx.csv')
+
 # parse JSON to excel
 def convert_json_2_xlsx():
     df_json = pd.read_json(path + folder+ fname+'.json')
@@ -28,6 +31,8 @@ def convert_xlsx_2_json():
 df_json = pd.read_json(path + folder+ fname+'.json')
 # print(df_json.head(5))
 print(df_json.info)
+
+# iterate DS: 
 
 
 def main():
