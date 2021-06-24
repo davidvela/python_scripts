@@ -15,6 +15,15 @@ def calculate_days(idate):
     delta = l_date1 - f_date
     print(idate + " = " + str(delta.days + 1))
 
+def print_timestamp():
+    timestamp = 1613520000
+    date_time = date.fromtimestamp(timestamp)
+    # print("Date time object:", date_time.strftime("%d/%m/%Y"))
+    # print(date_time)
+    # print(date_time.strftime("%d/%m/%Y"))
+    print(date_time.strftime("%Y%m%d"))
+
+
 def main():
     print("Hello, World!")
     calculate_days("20140102")
@@ -22,6 +31,8 @@ def main():
     calculate_days("20210101")
     calculate_days("20210224")
     calculate_days(date.today().strftime('%Y%m%d'))
+
+
 
 if __name__== "__main__" :
     main()
